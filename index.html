@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="index.css" type="text/css"/>
+    <script src="script.js" type="module"></script>
+</head>
+<body class="bg-gradient-to-br from-indigo-100 via-pink-50 to-purple-100 transition duration-500">
+    <header class="fixed w-full z-50 glass">
+        <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+            <h1 class="font-bold text-lg text-gray-900 uppercase">appreciation letter</h1>
+            <div class="flex gap-3">
+                <button id="musicToggle" class="btn-small">
+                    <i class="bi bi-music-note-beamed"></i>
+                </button>
+            <button id="themeToggle" class="btn-small">
+                <i class="bi bi-moon-fill"></i>
+            </button>
+            </div>
+        </div>
+    </header>
+    <section class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-24 fade-section">
+        <h2 class="text-4xl md:text-6xl font-bold text-indigo-600 dark:text-pink-400 mb-6"> To: <span id="teacherName"></span>
+        <i class="bi bi-suit-heart-fill"></i>
+        </h2>
+        <p id="typewriter" class="max-w-2xl text-gray-700 dark:Text-gray-300 text-lg"></p>
+    </section>
+
+    <section class="py-20 px-6 fade-section">
+        <div class="max-w-4xl mx-auto glass p-10 rounded-3xl shadow-xl text-center">
+            <h3 class="text-3xl font-semibold mb-6 text-indigo-600 dark:text-pink-400">Appreciation Letter</h3>
+            <p class="text-gray-700 dark:text-black-300 leading-relaxed">
+                Thank you for believing in us, as your students. You guide us patiently and inspire us every day. Your lessons are more like a books that truly touch hearts.
+            </p>
+        </div>
+    </section>
+    <section class="py-20 px-6 fade-section">
+        <h3 class="text-center text-3xl font-semibold text-indigo-600 dark:text-pink-400 mb-12">Beautiful Moments</h3>
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
+            <img src="images/1.jpg" alt="1" class="gallery-img"/>
+            <img src="images/2.jpg" alt="2" class="gallery-img"/>
+            <img src="images/3.jpg" alt="3" class="gallery-img"/>
+            <img src="images/4.jpg" alt="4" class="gallery-img"/>
+            <img src="images/5.jpg" alt="5" class="gallery-img"/>
+            <img src="images/6.jpg" alt="6" class="gallery-img"/>
+            <img src="images/7.jpg" alt="7" class="gallery-img"/>
+            <img src="images/8.jpg" alt="8" class="gallery-img"/>
+            <img src="images/9.jpg" alt="9" class="gallery-img"/>
+            <img src="images/10.jpg" alt="10" class="gallery-img"/>
+            <img src="images/11.jpg" alt="11" class="gallery-img"/>
+            <img src="images/12.jpg" alt="12" class="gallery-img"/>
+            <img src="images/13.jpg" alt="13" class="gallery-img"/>
+        </div>
+    </section>
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <img id="modalImage" src="">
+            <br>
+            <a id="downloadBtn" class="btn-download" download>Download ↓ </a>
+        </div>
+    </div>
+    <footer class="text-center py-10 text-gray-600 dark:text-gray-400">
+        Made with HTML, CSS, JavaScript
+    </footer>
+    <audio id="bgMusic" loop>
+        <source src="" type="audio/mpeg">
+    </audio>
+</body>
+</html>

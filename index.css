@@ -1,0 +1,108 @@
+body {
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+.glass {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.dark .glass {
+    background: rgba(30, 30, 30, 0.6);
+}
+.btn-small {
+    background: white;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+.btn-small:hover {
+    transform: scale(1.1);
+    background: black;
+    color: white;
+}
+.gallery-img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.gallery-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 90%;
+    text-align: center;
+    animation: zoomIn 0.4s ease;
+}
+.dark .modal-content {
+    background: #1f2937;
+}
+.modal img {
+    max-height: 65vh;
+    border-radius: 15px;
+}
+.btn-download {
+    margin-top: 15px;
+    background: #ec4899;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 999px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.btn-download:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px rgba(236, 72, 153, 0.6);
+}
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.fade-section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s ease;
+}
+.fade-section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.particle {
+    position: fixed;
+    font-size: 20px;
+    animation: floatUp linear forwards;
+    opacity: 0.6;
+}
+@keyframes floatUp {
+    from {
+        transform: translateY(100vh) scale(1);
+        opacity: 0.7;
+    }
+    to {
+        transform: translateY(-10vh) scale(1.5);
+        opacity: 0;
+    }
+}
