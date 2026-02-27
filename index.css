@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: "Poppins", sans-serif;
     overflow-x: hidden;
@@ -25,6 +28,7 @@ body {
 }
 .gallery-img {
     width: 100%;
+    height: 260px;
     object-fit: cover;
     border-radius: 20px;
     cursor: pointer;
@@ -104,5 +108,36 @@ body {
     to {
         transform: translateY(-10vh) scale(1.5);
         opacity: 0;
+    }
+}
+@media screen and (max-width: 640px) {
+    body {
+        padding: 0 12px;
+    }
+    h2 {
+        font-size: 28px !important;
+        line-height: 1.3;
+    }
+    h3 {
+        font-size: 22px !important;
+    }
+    p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    .gallery-img {
+        height: 180px;
+        border-radius: 16px;
+    }
+    .modal-content {
+        width: 95%;
+        padding: 15px;
+    }
+    .modal img {
+        max-height: 50vh;
+    }
+    .btn-download {
+        padding: 6px 16px;
+        font-size: 14px;
     }
 }
