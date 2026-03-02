@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Apr-Ltr</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,6 +11,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvas-confetti/1.9.3/confetti.js" integrity="sha512-d+ZW87DH4Q33gcdLD4cdESUlAHokqxQ4dxprd5gvaerCF/Gkob/5FXOmtMEfbhna31eMTjH4TcLKLdIosh+Z3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvas-confetti/1.9.3/confetti.min.js" integrity="sha512-sLPKCwYDz/KpwnqqJagXuuxusKOMDk3NifonwkLItJyc2vBKfqSd1pWtRfolbfJmf4hXYZ0sk0AlQyjB0PEXGg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="shortcut icon" href="icon/favicon.ico" sizes="32x32" type="image/x-icon"/>
+    <link rel="apple-touch-icon" href="icon/favicon.ico" sizes="32x32" type="image/x-icon"/>
+    <link rel="icon" href="icon/favicon.jpg" sizes="1024x1024" type="image/jpg"/>
 
     <link rel="stylesheet" href="index.css" type="text/css"/>
     <script src="script.js" type="module"></script>
@@ -30,7 +37,7 @@
         </div>
     </header>
     <section class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-24 fade-section">
-        <h2 class="text-4xl md:text-6xl font-bold text-indigo-600 dark:text-pink-400 mb-6"> To: <span id="teacherName"></span>
+        <h2 class="text-4xl md:text-6xl font-bold text-indigo-600 dark:text-pink-400 mb-6"> To: Sir <span id="teacherName"></span>
         <i class="bi bi-suit-heart-fill"></i>
         </h2>
         <p id="typewriter" class="max-w-2xl text-gray-700 dark:Text-gray-300 text-lg"></p>
@@ -39,13 +46,15 @@
     <section class="py-20 px-6 fade-section">
         <div class="max-w-4xl mx-auto glass p-10 rounded-3xl shadow-xl text-center">
             <h3 class="text-3xl font-semibold mb-6 text-indigo-600 dark:text-pink-400">Appreciation Letter</h3>
-            <p class="text-gray-700 dark:text-black-300 leading-relaxed">
+            <p class="text-gray-700 dark:text-black-300 leading-relaxed" style="font-style: italic;">
                 Thank you for believing in us even though sometimes we are very naughty. As your students, we are grateful we have an adviser like you. You guide us patiently and inspire us every day. Your lessons are more than anyone else's; it's like a book that truly touches hearts and teaches us lessons that really help us for a better future.
             </p>
+        </br>
+            <p class="text-gray-700 dark:text-black-300 leading-relaxed" style="font-style: italic;"></p>
         </div>
     </section>
     <section class="py-20 px-6 fade-section">
-        <h3 class="text-center text-3xl font-semibold text-indigo-600 dark:text-pink-400 mb-12">Beautiful Moments</h3>
+        <h3 class="text-center text-3xl font-semibold text-indigo-600 dark:text-pink-400 mb-12">Picture with 11 - Creative</h3>
         <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
             <img src="images/1.jpg" alt="1" class="gallery-img"/>
             <img src="images/2.jpg" alt="2" class="gallery-img"/>
@@ -60,12 +69,15 @@
             <img src="images/11.jpg" alt="11" class="gallery-img"/>
             <img src="images/12.jpg" alt="12" class="gallery-img"/>
             <img src="images/13.jpg" alt="13" class="gallery-img"/>
+            <img src="images/14.jpg" alt="14" class="gallery-img"/>
+            <img src="images/15.jpg" alt="15" class="gallery-img"/>
+            <img src="images/16.jpg" alt="16" class="gallery-img"/>
         </div>
     </section>
     <div id="imageModal" class="modal">
         <div class="modal-content">
             <img id="modalImage" src="">
-            <br>
+            <p id="uploadDate" class="text-sm text-gray-500 mt-3"></p>
             <a id="downloadBtn" class="btn-download" download>Download ↓ </a>
         </div>
     </div>
@@ -76,4 +88,7 @@
         <source src="" type="audio/mpeg">
     </audio>
 </body>
+    <script>
+
+    </script>
 </html>
