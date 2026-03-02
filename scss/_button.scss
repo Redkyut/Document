@@ -1,0 +1,20 @@
+.close-btn {
+    position: absolute;
+    top: -45px;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background: $light;
+    color: $dark;
+    border-radius: 50%;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    @include flex-center;
+    @include smooth;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}

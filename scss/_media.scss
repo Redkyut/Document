@@ -1,0 +1,26 @@
+@media screen and (max-width: $mobile) {
+    .gallery {
+        padding: 20px;
+        gap: 15px;
+
+        img {
+            height: 220px;
+        }
+    }
+    .modal {
+        .modal-content {
+            img {
+                width: 95vw;
+                height: auto;
+                max-height: 75vh;
+            }
+            .upload-date {
+                font-size: 12px;
+            }
+            .download-btn {
+                padding: 8px 16px;
+                font-size: 13px;
+            }
+        }
+    }
+}

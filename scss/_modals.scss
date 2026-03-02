@@ -1,0 +1,52 @@
+.modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    opacity: 0;
+    background: $glass-bg;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    @include flex-center;
+    @include smooth(0.35s);
+    z-index: 1000;
+
+    &.active {
+        display: flex;
+        opacity: 1;
+    }
+    .modal-content {
+        position: relative;
+        @include flex-center;
+        flex-direction: column;
+
+        img {
+            width: 500px;
+            max-width: 90vw;
+            height: 500px;
+            max-height: 80vh;
+            object-fit: cover;
+            border-radius: 20px;
+            @include smooth(0.35s);
+        }
+        .upload-date {
+            margin-top: 15px;
+            color: $light;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+        }
+        .download-btn {
+            margin-top: 12px;
+            padding: 10px 20px;
+            background: $primary;
+            color: $light;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 14px;
+            @include smooth;
+
+            &:hover {
+                background: darken($primary, 10%);
+            }
+        }
+    }
+}
